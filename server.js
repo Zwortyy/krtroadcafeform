@@ -7,7 +7,9 @@ const app = express();
 
 // 🔒 CORS özelleştirilmiş şekilde tanımlanıyor
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://roadcafebuilders.com'],
+  origin: ['http://localhost:5173',
+    'https://roadcafebuilders.com',
+    'https://krtroadcafeform-m15w.vercel.app'],
   methods: ['POST'],
   allowedHeaders: ['Content-Type'],
 }));
